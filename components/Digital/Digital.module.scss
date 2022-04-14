@@ -1,0 +1,126 @@
+.digital {
+	width: 100%;
+    padding: 180px 0 130px;
+	margin: auto;
+	position: relative;
+}
+
+.digital__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.digital__content {
+	max-width: 590px;
+	padding-right: 50px;
+}
+
+.digital__title {
+	font-family: "Muller", sans-serif;
+	color: #000;
+    max-width: 480px;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	margin: 0;
+	font-weight: normal;
+	padding: 45px 0 50px;
+	span {
+        line-height: 1.5;
+		font-weight: bold;
+        font-size: 3rem;
+		color: #5153E5;
+	}
+}
+
+.digital__links {
+    display: flex;
+    align-items: center;
+    li {
+        margin-right: 18px;
+    }
+}
+
+.digital__cardLink {
+    padding: 26px 19px;
+    width: 271px;
+    height: 82px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Muller',sans-serif;
+    font-size: 1.1rem;
+    line-height: 1;
+    font-weight: 800;
+    border-radius: 15px;
+    color: #fff;
+    background: #4042E2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    transition: 300ms ease all;
+    &:hover {
+      background: #2F333A;
+    }
+}
+
+.digital__cardLink_backgraund {
+    color: #000;
+    background: transparent;
+    border: 2px solid #FF0000;
+    &:hover {
+        background: #FF0000;
+        color: #fff;
+      }
+}
+
+.digital__image {
+    transition: 300ms ease all;
+    opacity: 1;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.digital__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 124px;
+}
+
+.digital__address {
+    font-family: 'Muller', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #000;
+    padding-top: 15px;
+}
+
+.digital__contactsLink {
+    font-family: 'Muller', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #000;
+    transition: color .4s;
+    &:hover {
+      color: #FF0000;
+    }
+  }
+
+.socialLinks {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialLink {
+    margin-right: 10px;
+    transition: 250ms ease all;
+    opacity: 1;
+    &:hover {
+        opacity: .6;
+    }
+}

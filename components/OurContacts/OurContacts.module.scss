@@ -1,0 +1,129 @@
+.ourContacts {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	z-index: 9;
+	background-color: #ffead9;
+}
+
+.ourContacts__container {
+	z-index: 15;
+	width: 64vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 60px 0 50px;
+}
+
+.ourContacts__infoContainer {
+	width: 55%;
+	padding-right: 25px;
+}
+
+.ourContacts__title {
+	margin: 0;
+	color: #31a05f;
+	font-family: "Muller", sans-serif;
+	font-weight: 800;
+	font-size: 2.6rem;
+	line-height: 1;
+}
+
+.ourContacts__text {
+	font-family: "Muller", sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.3rem;
+	padding: 30px 0 40px;
+	color: #181818;
+	margin: 0;
+	border-bottom: 1px solid #fff;
+}
+
+.ourContacts__links {
+	padding-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	gap: 30px;
+	li {
+		max-width: 260px;
+		box-sizing: border-box;
+	}
+}
+
+.ourContacts__cardText,
+.ourContacts__link {
+	display: flex;
+	span {
+		padding-right: 20px;
+	}
+}
+
+.ourContacts__infoTitle {
+	margin: 0;
+	color: #181818;
+	font-family: "Muller", sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	line-height: 1;
+	letter-spacing: -0.03em;
+}
+
+.ourContacts__infoTitle_color:hover {
+	color: #31a05f;
+}
+
+.ourContacts__infoText {
+	font-family: "Muller", sans-serif;
+	font-weight: normal;
+	padding-top: 0.7rem;
+	font-size: 0.875em;
+	line-height: 1.5;
+	color: #181818;
+	margin: 0;
+}
+
+@media screen and (min-width: 2900px) and (max-width: 3500px) {
+	.ourContacts__container {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1840px) {
+	.ourContacts__container {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.ourContacts__container {
+		padding: 30px 0 40px;
+		width: 83%;
+		flex-direction: column;
+		iframe {
+			width: 100%;
+		}
+	}
+	.ourContacts__infoContainer {
+		width: 100%;
+		padding-right: 0;
+	}
+	.ourContacts__links {
+		padding: 40px 0;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.ourContacts__title {
+		font-size: 2em;
+	}
+	.ourContacts__text {
+		font-size: 0.9rem;
+		padding: 30px 0;
+	}
+	.ourContacts__infoTitle {
+		font-size: 1.35rem;
+	}
+}

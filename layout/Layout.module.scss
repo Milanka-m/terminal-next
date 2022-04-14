@@ -1,0 +1,95 @@
+.page {
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	font-family: 'Muller', 'Antic', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smootthing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	a {
+		text-decoration: none;
+	}
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+.root {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.upButton {
+	position: relative;
+	border: 0;
+	border-radius: 5px;
+	width: 42px;
+	height: 42px;
+	position: fixed;
+	background:#31a05f;
+	visibility: hidden;
+	right: 20px;
+	bottom: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 0;
+	cursor: pointer;
+	z-index: 999;
+	transition: 300ms ease all;
+	opacity: 0.5;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 25px;
+		height: 32px;
+		top: 4px;
+		left: 8px;
+		background-image: url(../assets/images/arrow-up.webp);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: contain;
+		z-index: 1200;
+	}
+}
+
+.upButton_visibility {
+	visibility: visible;
+}
+
+.upButton:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+	.upButton {
+		width: 26px;
+		height: 26px;
+		padding: 16px;
+		right: 10px;
+		bottom: 30px;
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			top: 5px;
+			left: 5px;
+		}
+	}
+}

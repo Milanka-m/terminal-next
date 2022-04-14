@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://terminal-m31.ru [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.).terminal-m31.ru\.ru$ [NC]
+RewriteRule ^(.*)$ https://terminal-m31.ru/$1 [R=301,L] 

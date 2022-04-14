@@ -1,0 +1,46 @@
+.directions {
+  width: 80%;
+  padding-top: 50px;
+}
+
+.directions__title {
+  font-family: 'Muller',sans-serif;
+  color: #31a05f;
+  font-size: 1.48em;
+  line-height: 1;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  padding-bottom: 20px;
+}
+
+#directions__lists {
+  margin-left: 20px;
+  list-style: decimal;
+}
+
+.directions__item {
+  font-family: 'Muller',sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0;
+  a {
+    color: #31a05f;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .directions {
+    width: 90%;
+  }
+  
+  .directions__title {
+    font-size: 1.2em;
+  }
+  
+  .directions__item {
+    font-size: .9rem;
+  }
+} 

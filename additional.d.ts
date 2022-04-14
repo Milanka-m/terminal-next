@@ -1,0 +1,8 @@
+declare module "react-reveal"
+declare module "react-reveal/Fade"
+declare module "react-reveal/Flip"
+declare module "react-reveal/Zoom"
+declare module "react-countup"
+declare module "react-countup/CountUp"
+declare module "next-analytics"
+declare module "mui-image-slider"

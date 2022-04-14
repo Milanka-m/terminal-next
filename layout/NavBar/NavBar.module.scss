@@ -1,0 +1,152 @@
+.burgerMenu {
+  display: none;
+  z-index: 99;
+}
+
+#burgerMenu__toggle {
+  opacity: 0;
+}
+
+#burgerMenu__toggle:checked ~ .burgerMenu__btn > .burgerMenu__span {
+  transform: rotate(45deg);
+} 
+
+#burgerMenu__toggle:checked ~ .burgerMenu__btn > .burgerMenu__span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#burgerMenu__toggle:checked ~ .burgerMenu__btn > .burgerMenu__span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#burgerMenu__toggle:checked ~ .navBar__container {
+  visibility: visible;
+}
+
+.burgerMenu__btn {
+  display: flex; 
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 34px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 22;
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: opacity .4s;
+}
+
+.burgerMenu__btn > .burgerMenu__span,
+.burgerMenu__btn > .burgerMenu__span::before,
+.burgerMenu__btn > .burgerMenu__span::after {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 2.2px;
+  background-color: #000;
+  transition-duration: .25s;
+}
+
+.burgerMenu__btn > .burgerMenu__span::before {
+  content: '';
+  top: -7px;
+}
+
+.burgerMenu__btn > .burgerMenu__span::after {
+  content: '';
+  top: 7px;
+}
+
+.burgerMenu__btn:hover > .burgerMenu__span::before {
+  top: -9px;
+}
+
+.burgerMenu__btn:hover > .burgerMenu__span::after {
+  top: 9px;
+}
+
+.navBar__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.561);
+  visibility: hidden;
+  transition: visibility 0s, opacity .5s linear;
+  z-index: 20;
+}
+
+.navBar__navContainer {
+  background-color: #fff;
+  display: flex;
+  padding: 80px 0 25px;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0;
+  z-index: 21;
+}
+
+.navBar__nav {
+  width: 70%;
+  padding: 20px 40px;
+  margin: 24px 0;
+  background: rgba(196, 196, 196, .09);
+}
+
+.navBar__navLinks {
+  flex-direction: column;
+  align-items: center;
+  li {
+    display: block;
+    width: 100%;
+    margin: 0;
+		padding: 12px 0;
+  }
+}
+
+.navBar__navLink {
+  font-family: 'Muller', sans-serif;
+  font-weight: normal;
+  font-size: .87rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  margin: 0;
+  color: #000;
+  transition: 250ms ease all;
+  position: relative;
+  opacity: 1;
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.socialLinks {
+  padding-top: 53px;
+  display: flex;
+}
+
+.socialLink {
+  margin-left: 10px;
+  transition: 250ms ease all;
+  opacity: 1;
+  &:hover {
+    opacity: .6;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .burgerMenu {
+    display: flex;
+  }
+} 
+
+
