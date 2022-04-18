@@ -40,6 +40,7 @@ API Strapi
 ## 📃 Стек
 
 - TSX, SCSS
+- MUI
 - TypeScript
 - React
 - Next
