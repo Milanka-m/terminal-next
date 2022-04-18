@@ -5,6 +5,7 @@
 ## Проект Terminal развернут при помощи yarn create next-app --typescript
 
 **[Ссылка на сайт](https://terminal-m31.ru/)**
+
 Ссылка на репозиторий админки : **[strapi-terminal](https://github.com/Milanka-m/strapi-terminal)**
 
 ## ✍🏻 Краткое описание проекта
