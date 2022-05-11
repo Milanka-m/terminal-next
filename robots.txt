@@ -1,5 +1,0 @@
-User-agent: *
-Crawl-delay: 5
-Disallow: /politika-konfidencialnosti
-Sitemap: https://terminal-m31.ru/sitemap.xml
-Host: https://terminal-m31.ru/
